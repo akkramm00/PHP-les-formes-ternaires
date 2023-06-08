@@ -40,6 +40,16 @@ foreach($age as $clef => $value) {
 echo"<pre>";
 print_r($age);
 echo"</pre>";
+//=====================les tableaux multidimentionnels==================================
+$membres = array(
+  array('Pierre', 24 ,'pierre.giraud@houss.com'),
+  array('Paul', 22, 'paul.dubreuil@live.com'),
+  array('Jacques', 30, 'jacquot@gmail;com')
+);
+// Pour récupérer les valeurs attribuées a chaque menbres dans le tableau:
+ echo $membres[0][0]. ' a ' .$membres[0][1]. ' ans. Son mail est '.$membres[0][2]. '<br>';
+ echo $membres[1][0]. ' a ' .$membres[1][1]. ' ans. Son mail est '.$membres[1][2]. '<br>';
+ echo $membres[2][0]. ' a ' .$membres[2][1]. ' ans. Son mail est '.$membres[2][2]. '<br>';
 
 ?> 
 
