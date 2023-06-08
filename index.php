@@ -12,7 +12,6 @@ $prenoms = array('Pierre', 'Paul' , 'Jaques');// les prénoms sont séparées pa
 for($x = 0;$x <= 2 ; $x++){
   echo $prenoms[$x].'<br/>';
 }
-?><br/><?php
 // avce la boucle 'foreach' :
 foreach($prenoms as $prenom){
   echo $prenom.'<br>';
@@ -27,9 +26,20 @@ $age = array (
 
 // pour parcourir les tableaux assocaitifs ,la boucle "foreach" est la seule alternative :
 // => example :
-foreach($age as age){
-  echo $age."<br>";
+foreach($age as $value){
+  echo $value."<br>";
 }
+
+//pour recupéréer les clès et les valeurs ,on va procéder de la maniètre suivante :
+
+foreach($age as $clef => $value) {
+  echo 'l\'age de ' .$clef . ' est ' . $value.'.<br/>';
+}
+
+
+echo"<pre>";
+print_r($age);
+echo"</pre>";
 
 ?> 
 
